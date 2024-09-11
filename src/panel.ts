@@ -375,7 +375,7 @@ export class Panel {
 
         let clientId = options.email;
         if ("id" in options) clientId = options.id;
-        if ("password" in options) clientId = options.password;
+        //if ("password" in options) clientId = options.password;
 
         await this.post(`/${inboundId}/delClient/${clientId}`).catch(() => {});
         this.flushCache();
