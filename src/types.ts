@@ -43,6 +43,7 @@ export type ClientOptionsForVless = {
 };
 
 export type ClientOptionsForTrojan = {
+    id: string;
     password: string;
     flow?: string;
     email: string;
@@ -56,6 +57,7 @@ export type ClientOptionsForTrojan = {
 };
 
 export type ClientOptionsForShadowsocks = {
+    id: string;
     method?: string;
     password: string;
     email: string;
